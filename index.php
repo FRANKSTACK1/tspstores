@@ -343,7 +343,11 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-gold btn-block">Get Premium Package — &#8358;17,100</button>
+        <button
+          class="btn btn-gold btn-block"
+          style="width:100%; max-width:100%; padding:16px 20px; font-size:16px; white-space:normal; word-break:break-word; text-align:center; line-height:1.5;">
+          Get Premium Package — &#8358;17,100
+        </button>
       </div>
 
       <!-- Standard -->
@@ -365,7 +369,11 @@
             </div>
           </div>
         </div>
-        <button class="btn btn-charcoal btn-block">Get Standard Package — &#8358;12,100</button>
+        <button
+        class="btn btn-charcoal btn-block"
+        style="width:100%; max-width:100%; padding:16px 20px; font-size:clamp(14px, 2.5vw, 16px); white-space:normal; text-align:center; line-height:1.4; word-break:break-word;">
+        Get Standard Package — &#8358;12,100
+</button>
       </div>
 
     </div>
