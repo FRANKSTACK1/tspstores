@@ -261,7 +261,7 @@ Possible enhancements include:
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/your-repository.git
+git clone https://github.com/FRANKSTACK1/tspstores.git
 ```
 
 Move the project into your web server directory.
