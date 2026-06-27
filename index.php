@@ -369,11 +369,12 @@
             </div>
           </div>
         </div>
-        <button
+        <a
+        href="https://paystack.shop/pay/58ckf5on4o"
         class="btn btn-charcoal btn-block"
-        style="width:100%; max-width:100%; padding:16px 20px; font-size:clamp(14px, 2.5vw, 16px); white-space:normal; text-align:center; line-height:1.4; word-break:break-word;">
+        style="text-decoraton:none; width:100%; max-width:100%; padding:16px 20px; font-size:clamp(14px, 2.5vw, 16px); white-space:normal; text-align:center; line-height:1.4; word-break:break-word;">
         Get Standard Package — &#8358;12,100
-</button>
+</a>
       </div>
 
     </div>
