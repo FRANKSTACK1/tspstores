@@ -343,11 +343,12 @@
             </div>
           </div>
         </div>
-        <button
+        <a
+          href="https://paystack.shop/pay/is60fba2w4"
           class="btn btn-gold btn-block"
-          style="width:100%; max-width:100%; padding:16px 20px; font-size:16px; white-space:normal; word-break:break-word; text-align:center; line-height:1.5;">
+          style="text-decoration:none; width:100%; max-width:100%; padding:16px 20px; font-size:16px; white-space:normal; word-break:break-word; text-align:center; line-height:1.5;">
           Get Premium Package — &#8358;17,100
-        </button>
+        </a>
       </div>
 
       <!-- Standard -->
