@@ -1,3 +1,21 @@
+<?php
+
+require 'db.php';
+
+$packages = [];
+
+$sql = "SELECT * FROM package_pricing";
+$result = mysqli_query($conn,$sql);
+
+while($row=mysqli_fetch_assoc($result)){
+    $packages[$row['package_name']] = $row;
+}
+
+$premium = $packages['premium'];
+$standard = $packages['standard'];
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -327,7 +345,9 @@
         <span class="badge badge-gold">Premium Package</span>
         <div class="price-body">
           <div>
-            <div class="price-tag">&#8358;17,100</div>
+            <div class="price-tag">
+                &#8358;<?= number_format($premium['price']) ?>
+            </div>
             <span class="includes-label">Includes:</span>
             <ul class="includes-list">
               <li><i class="fa-solid fa-circle-check"></i> Power Bank (10,000mAh)</li>
@@ -344,10 +364,11 @@
           </div>
         </div>
         <a
-          href="https://paystack.shop/pay/is60fba2w4"
+          href="<?= htmlspecialchars($premium['paystack_link']) ?>"
           class="btn btn-gold btn-block"
           style="text-decoration:none; width:100%; max-width:100%; padding:16px 20px; font-size:16px; white-space:normal; word-break:break-word; text-align:center; line-height:1.5;">
-          Get Premium Package — &#8358;17,100
+          Get Premium Package —
+          &#8358;<?= number_format($premium['price']) ?>
         </a>
       </div>
 
@@ -356,7 +377,9 @@
         <span class="badge badge-grey">Standard Package</span>
         <div class="price-body">
           <div>
-            <div class="price-tag">&#8358;12,100</div>
+            <div class="price-tag">
+                &#8358;<?= number_format($standard['price']) ?>
+            </div>
             <span class="includes-label">Includes:</span>
             <ul class="includes-list">
               <li><i class="fa-solid fa-circle-check"></i> Customized Hoodie</li>
@@ -371,10 +394,11 @@
           </div>
         </div>
         <a
-        href="https://paystack.shop/pay/58ckf5on4o"
+        href="<?= htmlspecialchars($standard['paystack_link']) ?>"
         class="btn btn-charcoal btn-block"
         style="text-decoraton:none; width:100%; max-width:100%; padding:16px 20px; font-size:clamp(14px, 2.5vw, 16px); white-space:normal; text-align:center; line-height:1.4; word-break:break-word;">
-        Get Standard Package — &#8358;12,100
+        Get Standard Package —
+        &#8358;<?= number_format($standard['price']) ?>
 </a>
       </div>
 
