@@ -3,7 +3,7 @@
 $host="localhost";
 $user="root";
 $password="";
-$database="your_database";
+$database="tsp";
 
 $conn=mysqli_connect(
 $host,
